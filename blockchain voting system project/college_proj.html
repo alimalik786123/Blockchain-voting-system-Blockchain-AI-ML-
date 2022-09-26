@@ -1,42 +1,139 @@
 <!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Side Navigation Bar</title>
-	<link rel="stylesheet" href="stylesheet.css">
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/db37ad52d4.js">
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
+    <nav class="sidebar">
+        <header>
+           
+                
 
-<div class="wrapper">
-    <div class="sidebar">
-        <h2>Sidebar</h2>
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
-            <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
-            <li><a href="#"><i class="fa-solid fa-chart-line"></i>portfolio</a></li>
-            <li><a href="#"><i class="fas fa-blog"></i>Blogs</a></li>
-            <li><a href="#"><i class="fas fa-address-book"></i>Contact</a></li>
-            <li><a href="#"><i class="fas fa-map-pin"></i>Map</a></li>
-        </ul> 
-        <div class="social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="main_content">
-        <div class="header">
-          <input type="text" placeholder="search" id="search"><i class="fa-solid fa-magnifying-glass"></i> 
-        </div>  
-        <div class="info">
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-    </div>
-</div>
+                <div class="text logo-text">
+                    <span class="name">Voting System</span>
+                    <span class="profession">Blockchain and ML</span>
+                </div>
+            </div>
+
+            
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+    
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Verification</span>
+                        </a>
+                    </li><br>
+                    
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Rsults</span>
+                        </a>
+                    </li>
+                    <br>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li><br>
+
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">complaint</span>
+                        </a>
+                    </li><br>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">about us</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div><br>
+            <br>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <div class="texthead">
+            <div class="searchbox">
+                <form action="search.php" method="get">
+                    <button type="submit"><i class="bx bx-search icon"></i></button>
+                    <input type="text" name="search" maxlength="60" placeholder="Search..." required>
+                   
+                </form>
+            </div>
+           </div>
+    </section>
+    
+    <!-- <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script> -->
 
 </body>
 </html>
