@@ -10,17 +10,14 @@
 :root{
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
-    --primary-color: #695CFE;
+    --sidebar-color: rgb(0, 0, 0);
+    --primary-color: #ebebeb;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
 
-    /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
+  
+   
 }
 
 body{
@@ -29,37 +26,15 @@ body{
     transition: var(--tran-05);
 }
 
-::selection{
-    background-color: var(--primary-color);
-    color: rgb(226, 21, 21);
-}
 
-body.dark{
-    --body-color: #18191a;
-    --sidebar-color: #0d6dce;
-    --primary-color: #1f79d3;
-    --primary-color-light: #3a3b3c;
-    --toggle-color: #fff;
-    --text-color: rgb(197, 13, 13);
-}
 
-/* ===== Sidebar ===== */
- .sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
-    padding: 10px 14px;
-    background: var(--sidebar-color);
-    transition: var(--tran-05);
-    z-index: 100;  
-}
+
+
+
 .sidebar.close{
     width: 88px;
 }
 
-/* ===== Reusable code - Here ===== */
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -84,11 +59,7 @@ body.dark{
     font-size: 20px;
 }
 
-.sidebar .text,
-.sidebar .icon{
-   color: #000000;
-    transition: var(--tran-03);
-}
+
 
 .sidebar .text{
     font-size: 17px;
@@ -96,10 +67,7 @@ body.dark{
     white-space: nowrap;
     opacity: 1;
 }
-.sidebar.close .text{
-    opacity: 0;
-}
-/* =========================== */
+
 
 .sidebar header{
     position: relative;
@@ -125,42 +93,6 @@ header  .profession{
     display: block;
 }
 
-/* .sidebar header .image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .sidebar header .image img{
-    width: 40px;
-    border-radius: 6px;
-} */
-
-/* .sidebar header .toggle{
-    position: absolute;
-    top: 50%;
-    right: -25px;
-    transform: translateY(-50%) rotate(180deg);
-    height: 25px;
-    width: 25px;
-    background-color: var(--primary-color);
-    color: var(--sidebar-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    cursor: pointer;
-    transition: var(--tran-05);
-}
-
-body.dark .sidebar header .toggle{
-    color: var(--text-color);
-}
-
-.sidebar.close .toggle{
-    transform: translateY(-50%) rotate(0deg);
-} */
 
 .sidebar .menu{
     margin-top: 40px;
@@ -170,7 +102,7 @@ body.dark .sidebar header .toggle{
     border-radius: 6px;
     background-color: black;
     cursor: pointer;
-    /* transition: var(--tran-05); */
+ 
 }
 
 .sidebar li.search-box input{
@@ -188,7 +120,7 @@ body.dark .sidebar header .toggle{
 .sidebar li a{
     list-style: none;
     height: 100%;
-    background-color:rgb(184, 122, 255);
+    background-color:rgb(233, 233, 233);
     display: flex;
     align-items: center;
     height: 100%;
@@ -321,7 +253,7 @@ body.dark .home .text{
       border-color: #3a3b3c;
   }
   .searchbox{
-     margin-left: 350px;
+     margin-left: 330px;
      margin-right: 100px;
   }
   .searchbox button {
@@ -349,4 +281,123 @@ body.dark .home .text{
 .searchbox{
     align-items: center;
     height: 1000px;
+}
+.pro{
+    position: absolute;
+    height: 50px;
+    margin-top: 22px;
+    transform: translateX(650%);
+    border-radius: 20px;
+}
+.logo{
+    position: absolute;
+    height: 35px;
+    margin-top: 30px;
+    transform: translateX(150%);
+    border-radius: 20px;
+}
+.bell{
+    position: absolute;
+    height: 35px;
+    margin-top: 30px;
+    transform: translateX(500%);
+    border-radius: 20px;
+}
+.graph{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    color: #0b3661;
+    bottom: 0%;
+   
+}
+.bgimg{
+    height: 250px;
+    width: 550px;
+   transform: translateY(-40%);
+}
+.trend{
+    left: 20%;
+    height: 250px;
+    width: 550px;
+   transform: translate(100%,-40%);
+
+   
+
+}
+.vote{
+    position: absolute;
+    height : 60px;
+    width  : 200px;
+    bottom : 23%;
+    left : 19%;
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+    box-shadow: #000000;
+    text-shadow: #0d6dce;
+    border-radius: 15px;
+    color: white;
+    
+    
+    
+    
+    
+   
+}
+.prev{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    bottom: 23%;
+    left:65%;
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+    box-shadow: #000000;
+    border-radius: 15px;
+    color: white;
+    
+    
+    
+   
+}
+.links{
+    position: absolute;
+    color: #DDD;
+    padding: 30px;
+    height:100px;
+    width: 1150px;
+    background-color: #464343;
+    bottom: 0%;
+    font-size: large;
+}
+.mail{
+    position: absolute;
+    bottom: 15%;
+    margin: 20px;
+    height: 40px;
+    transform: translateX(5%);
+    
+}
+.insta{
+    position: absolute;
+    bottom: 15%;
+    margin: 20px;
+    height: 40px;
+    left: 18%;
+    
+}
+
+.college{
+    position: absolute;
+    margin-top: 20px;
+    left: 10%;
+    font-size: larger;
+}
+.aiml{
+    position:absolute;
+    color: #DDD;
 }
