@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-  <!-- Coding by CodingLab | www.codinglabweb.com -->
+ 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!----======== CSS ======== -->
+   
     <link rel="stylesheet" href="style.css">
     
-    <!----===== Boxicons CSS ===== -->
+   
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://kit.fontawesome.com/db37ad52d4.js">
     
-    <!--<title>Dashboard Sidebar Menu</title>--> 
+   
 </head>
 <body>
     <nav class="sidebar">
@@ -22,8 +22,9 @@
                 
 
                 <div class="text logo-text">
-                    <span class="name">Voting System</span>
-                    <span class="profession">Blockchain and ML</span>
+                    <p class="aiml">voting system</p>
+                    <span class="name"></span>
+                    <span class="profession"></span>
                 </div>
             </div>
 
@@ -41,7 +42,7 @@
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Verification</span>
                         </a>
-                    </li><br>
+                    </li>
                     
 
                     <li class="nav-link">
@@ -50,14 +51,14 @@
                             <span class="text nav-text">Rsults</span>
                         </a>
                     </li>
-                    <br>
+                    
 
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-bell icon'></i>
                             <span class="text nav-text">Notifications</span>
                         </a>
-                    </li><br>
+                    </li>
 
 
                     <li class="nav-link">
@@ -65,7 +66,7 @@
                             <i class='bx bx-pie-chart-alt icon' ></i>
                             <span class="text nav-text">complaint</span>
                         </a>
-                    </li><br>
+                    </li>
                     <li class="nav-link">
                         <a href="#">
                             <i class='bx bx-pie-chart-alt icon' ></i>
@@ -94,46 +95,26 @@
     </nav>
 
     <section class="home">
-        
-        <div class="texthead">
+        <a href="#" class="graph"><img src="https://assets.weforum.org/editor/Q7dvoJhnBUwqcnpaRITjyq6GBKueSeLmU0ssakBSm1k.PNG" alt="graph" class="bgimg"></a>
+        <a href="#" class="graph"><img src="https://c.ndtvimg.com/2019-05/6ng26lgc_voting-trend-at-2-pm_625x300_23_May_19.jpg?im=Resize=(1230,900)" alt="" class="trend"></a>
+        <button class="vote" onclick="vote.html">VOTE</button>
+        <button class="prev">SEE PREV RESULT</button>
+        <div class="links">CONTCT US <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/60/60543.png" alt="" class="mail"></a>
+          <a href="#"><img src="https://www.kortegaard.co.uk/wp-content/uploads/2020/06/best-solutions-of-instagram-png-transparent-png-images-unique-white-instagram-logo-outline-of-white-instagram-logo-outline-copy.png" alt="" class="insta"></a>
+        </div>
+        <div class="texthead"><p class="college">FRCRCE</p>
             <div class="searchbox">
-                <form action="search.php" method="get">
+                <form action="#" method="get">
                     <button type="submit"><i class="bx bx-search icon"></i></button>
                     <input type="text" name="search" maxlength="60" placeholder="Search..." required>
-                   
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_P7mO_NA8WbmSJs1ivPIydvdEGI8hs-ZQQ&usqp=CAU" class="pro" alt="">
+                   <img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="" class="logo">
+                   <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-512.png" alt="" class="bell">
                 </form>
             </div>
            </div>
     </section>
     
-    <!-- <script>
-        const body = document.querySelector('body'),
-      sidebar = body.querySelector('nav'),
-      toggle = body.querySelector(".toggle"),
-      searchBtn = body.querySelector(".search-box"),
-      modeSwitch = body.querySelector(".toggle-switch"),
-      modeText = body.querySelector(".mode-text");
-
-
-toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-})
-
-searchBtn.addEventListener("click" , () =>{
-    sidebar.classList.remove("close");
-})
-
-modeSwitch.addEventListener("click" , () =>{
-    body.classList.toggle("dark");
     
-    if(body.classList.contains("dark")){
-        modeText.innerText = "Light mode";
-    }else{
-        modeText.innerText = "Dark mode";
-        
-    }
-});
-    </script> -->
-
 </body>
 </html>
